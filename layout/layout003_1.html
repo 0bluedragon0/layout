@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0; box-sizing: border-box;}
+        #app{width: 1000px; margin:0 auto;}
+        header, nav, main, footer{border: 1px solid red;}
+        header{overflow: hidden; height: 50px;}
+        .left_header{width:200px; display: inline-block; margin-left: 50px;
+            font-size: 30px;text-align: center; float: left;}
+        .right_header{width: 600px; height:100%; display: inline-block; margin-right: 50px; float: right;}
+        .search_box{width: 100%; height: 30px; padding: 5px 10px;}
+        .search{width:550px; border-radius: 20px; 
+            border:1px solid gray; margin:0 auto; padding:5px 12px;}
+        header{width:100%;height: 50px;}
+        aside{width:200px; height: 100px;background-color: pink;}
+        main{overflow: hidden;}
+        .left{float:left;}
+        .right{float:right;}
+        .center{float:left;}
+        ul{list-style: none; width:950px; margin:0 auto;}
+        li{display: inline-block; width:150px; margin:0 auto; background-color: skyblue;
+        text-align: center; border-radius: 20px; height: 50px; line-height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="left_header">LOGO</div>
+            <div class="right_header">
+                <div class="search_box">
+                    <input class="search" type="text" placeholder="검색어를 입력하세요">
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>REDICE</li>
+                <li>WORKS</li>
+                <li>BUSINESS</li>
+                <li>CONTACT</li>
+                <li>RECUIT</li>
+                <li>SPONSOR</li>
+            </ul>
+        </nav>
+        <main>
+            <aside class="left">왼쪽</aside>
+            <section class="center">중간</section>
+            <aside class="right">오른쪽</aside>
+        </main>
+        <footer>copyright &copy; 2024 </footer>
+    </div>
+</body>
+</html>
